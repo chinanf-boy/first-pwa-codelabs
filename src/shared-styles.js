@@ -41,6 +41,24 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
         margin-top: 10px;
         margin-bottom: 10px;
       }
+      pre {
+        font-family: Inconsolata, Consolas, 'DEJA VU SANS MONO', 'DROID SANS MONO', Proggy, monospace;
+        font-size: 80%;
+        background-color: #f4f4f4;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        padding: 5px;
+        line-height: 1.3;
+        display: block;
+        width: 100%;
+        overflow: auto;
+      }
+      code {
+        font-family: Inconsolata, Consolas, 'DEJA VU SANS MONO', 'DROID SANS MONO', Proggy, monospace;
+        background-color: #eff0f1;
+        white-space: pre-wrap;
+        padding: 1px 5px;
+      }
     </style>
   </template>
 </dom-module>`;

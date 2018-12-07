@@ -17,7 +17,7 @@ class MyView extends PolymerElement {
       <div class="card">
       <marked-element>
       <div slot="markdown-html"></div>
-      <script type="text/markdown" src="../mds/[[file]].md"></script> 
+      <script type="text/markdown" src="./mds/[[file]].md"></script> 
       </marked-element>
       </div>
     `;
