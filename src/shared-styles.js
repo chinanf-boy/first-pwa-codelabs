@@ -34,7 +34,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
         width: auto;
         height: auto;
         max-width: 68%;
-        max-height: 40%;
+        max-height: 30rem;
         display: block;
         margin-left: auto;
         margin-right: auto;

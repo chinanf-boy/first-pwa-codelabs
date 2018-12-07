@@ -1,4 +1,4 @@
-## 实现 app shell
+## 4. 实现 app shell
 
 开始一个新项目的方法很多，我们推荐 [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/)。在这个项目中，为了保持项目的简单，我们把所有的素材都准备好了。
 

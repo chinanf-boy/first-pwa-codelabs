@@ -1,4 +1,4 @@
-## 使用 service worker 缓存预报数据
+## 7. 使用 service worker 缓存预报数据
 
 选择正确的[缓存策略](https://jakearchibald.com/2014/offline-cookbook/)是很重要的，选择依赖于你的应用要展示数据的类型。比如，像天气和股票报价一类的时效性数据应该尽可能的保持最新，而头像图片或文章内容更新的频率可以低一些。
 

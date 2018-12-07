@@ -1,4 +1,4 @@
-## 使用 service worker 预缓存 app shell
+## 6. 使用 service worker 预缓存 app shell
 
 PWA 应用必须快速、可安装，这意味着它们在有网络、无网络、网络断断续续、网速慢的环境都能工作。要达到这个目标，我们需要使用 service worker 来缓存 app shell，这样它总能快速可靠的可用。
 

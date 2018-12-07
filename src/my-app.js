@@ -77,15 +77,15 @@ class MyApp extends PolymerElement {
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>步骤</app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-            <a name="view1" href="[[rootPath]]view1">介绍</a>
-            <a name="view2" href="[[rootPath]]view2">开始</a>
-            <a name="view3" href="[[rootPath]]view3">设计 app shell 框架</a>
-            <a name="view4" href="[[rootPath]]view4">实现 app shell</a>
-            <a name="view5" href="[[rootPath]]view5">从第一次快速载入开始</a>
-            <a name="view6" href="[[rootPath]]view6">使用 service worker 预缓存 app shell</a>
-            <a name="view7" href="[[rootPath]]view7">使用 service worker 缓存预报数据</a>
-            <a name="view8" href="[[rootPath]]view8">支持原生集成</a>
-            <a name="view9" href="[[rootPath]]view9">分发到安全的主机然后庆祝一下</a>
+            <a name="view1" href="[[rootPath]]view1">1. 介绍</a>
+            <hr style="width:88%;" /><a name="view2" href="[[rootPath]]view2">2. 开始</a>
+            <hr style="width:88%;" /><a name="view3" href="[[rootPath]]view3">3. 设计 app shell 框架</a>
+            <hr style="width:88%;" /><a name="view4" href="[[rootPath]]view4">4. 实现 app shell</a>
+            <hr style="width:88%;" /><a name="view5" href="[[rootPath]]view5">5. 从第一次快速载入开始</a>
+            <hr style="width:88%;" /><a name="view6" href="[[rootPath]]view6">6. 使用 service worker 预缓存 app shell</a>
+            <hr style="width:88%;" /><a name="view7" href="[[rootPath]]view7">7. 使用 service worker 缓存预报数据</a>
+            <hr style="width:88%;" /><a name="view8" href="[[rootPath]]view8">8. 支持原生集成</a>
+            <hr style="width:88%;" /><a name="view9" href="[[rootPath]]view9">9. 分发到安全的主机然后庆祝一下</a>
           </iron-selector>
         </app-drawer>
 
@@ -94,7 +94,7 @@ class MyApp extends PolymerElement {
 
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
-              <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
+            <paper-icon-button src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="octocat" title="octocat"></paper-icon-button>
               <div main-title="">你的第一个渐进式Web应用程序</div>
             </app-toolbar>
           </app-header>
@@ -144,17 +144,14 @@ class MyApp extends PolymerElement {
   }
 
   _pageChanged(page) {
-    // switch (true) {
-    //   case (page.length <= 5): // 'view1' == 5
-    //     import('./my-view.js');
-    //     break;
-    //   case (page.length > 5): // 'view404' == 5
-    //     import('./my-view404.js');
-    //     break;
-    // }
-      console.log(page)
+    switch (true) {
+      case (page.length <= 5): // 'view1' == 5
         import('./my-view.js');
-
+        break;
+      case (page.length > 5): // 'view404' == 5
+        import('./my-view404.js');
+        break;
+    }
   }
 }
 
