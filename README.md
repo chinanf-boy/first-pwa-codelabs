@@ -9,4 +9,6 @@
 
 - `npm i`
 - `polymer serve`
-- `polymer build`
+- `polymer build` 贼慢，
+
+> 不再使用Polymer，超慢的
